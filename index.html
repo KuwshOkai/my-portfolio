@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kuwsh Portfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -55,6 +56,32 @@
   <section id="projects" class="section">
     <div class="container">
       <h2 class="title">projects</h2>
+      <div id="slider">
+        <div class="card">
+          <div class="card-image">
+            <figure clas="image is-16-by9 is-covered">
+              <img src="imgs/𝖙𝖎𝖗𝖊𝖉.png" alt="lebron james"/>
+            </figure>
+          </div>
+          <div class=" card-content-slider-text">
+            <div class="is-size-5 box">
+              <p class="has-text-success">lebron james</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <figure clas="image is-16-by9 is-covered">
+              <img src="imgs/magi-the-labyrinth-of-magic-vector-art-gnjxaa49z5xzuus6.jpg" alt="lebron james"/>
+            </figure>
+          </div>
+          <div class=" card-content-slider-text">
+            <div class="is-size-5 box">
+              <p class="has-text-success">lebron james</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -80,5 +107,16 @@
     </div>
   </section>
   
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+  <script>
+      bulmaCarousel.attach('#slider', {
+          slidesToScroll: 1,
+          slidesToShow: 1,
+          infinite: true,
+          autoplay: true,
+      });
+  </script>
+
 </body>
 </html>
