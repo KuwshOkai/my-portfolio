@@ -45,6 +45,7 @@
   width: 45%;
   border-right: .15em solid #FFA500; /* The typwriter cursor */
   white-space:normal;
+  word-break: break-word;
   margin: 0 auto;
   letter-spacing: .05em; /* Adjust as needed */
   animation: 
